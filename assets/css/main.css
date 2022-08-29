@@ -40,6 +40,7 @@
 
 html{
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 
@@ -269,39 +270,11 @@ z-index: 110;
     top: 0;
 }
 
-.test{
-    height: 1000rem;
-}
-
-.test1{
-    height: 100rem;
-    position: relative;
-    /* background-color: red; */
-    border: 2px solid beige;
-}
-
-.img-para{
-    height: 60rem;
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-}
-.top-img{
-    top: 0;
-  z-index: 11;
-}
-.middle-img{
-    top: 35%;
-    z-index: 11;
-}
-.bottom-img{
-    top: 55%;
-    z-index: 11;
-}
-
-
 /* Hiking information */
 
+.hiking-information{
+    height: 1000rem;
+}
 /* Footer */
 
 /* Media queries */
