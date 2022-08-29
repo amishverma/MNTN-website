@@ -14,6 +14,16 @@ const loader=document.querySelector(".preloader")
 window.addEventListener("load",()=>{
  gsap.to(".preloader",{opacity:0,duration:2,y:0,ease:"power2"})
 })
+
+openMenuIcon.addEventListener("click",()=>{
+    mobileMenu.classList.add("menu-opened");
+    headerOverlay.classList.add("menu-opened")
+})
+
+closeMenuIcon.addEventListener("click",()=>{
+    mobileMenu.classList.remove("menu-opened");
+    headerOverlay.classList.remove("menu-opened");
+})
 // Open menu & add overlay
 
 // Close menu & remove overlay
