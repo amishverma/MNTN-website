@@ -1,3 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+}
+
 /* Import fonts */
 @font-face {
     font-family: Chronicle Display;
@@ -29,6 +39,41 @@
     --container-spacing: 0 2.4rem;
 }
 /* Base styles */
+body{
+    background-color: rebeccapurple;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    min-height: 100vh;
+    transition: 200ms all ease;
+  
+}
+
+
+
+.preloader{
+    position: fixed;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    /* border: 2px solid greenyellow; */
+}
+
+.loading-wrapper{
+  display: flex;
+  justify-content: center;
+}
+.logo-preloader{
+    width: 150px;
+}
 
 /* Reusable classes */
 
