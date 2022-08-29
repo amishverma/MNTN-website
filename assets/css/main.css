@@ -180,6 +180,125 @@ img{
 }
 
 /* Hero */
+.main{
+    overflow: hidden;
+}
+.hero{
+    position: relative;
+    height: 100rem;
+}
+
+.hero::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(135deg,rgba(0, 0, 0, 0.6),transparent 77%);
+    z-index: 50;
+}
+
+.hero-data{
+    padding-top: 15rem;
+    /* background-color: red; */
+    position: relative;
+    z-index: 100;
+}
+
+.tagline{
+    display: inline-block;
+    font-size:var(--font-size-sm);
+    color: var(--clr-accent);
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin-left: 5.5rem;
+    margin-bottom: var(--margin-bottom-sm);
+    position: relative;
+}
+
+.tagline::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -5.5rem;
+    width: 4rem;
+    height: 2px;
+    background-color: var(--clr-accent);
+    transform: translateY(-50%);
+}
+
+.title{
+    font-family: var(--font-family-title);
+    font-size: var(--font-size-lg);
+    font-weight: 300;
+    text-transform: capitalize;
+    line-height: 1.3;
+    margin-bottom: var(--margin-bottom-md);
+
+}
+
+.main-title{
+    font-size: var(--font-size-xl);
+}
+
+.btn{
+    display: inline-flex;
+    align-self: center;
+    font-size: var(--font-size-md);
+    font-weight: bold;
+    gap: 1rem;
+}
+.parallax-img{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 60rem;
+    object-fit: cover;
+    object-position: 30% 50%;
+}
+.parallax-bottom-img{
+top: 55%;
+z-index: 110;
+}
+.parallax-middle-img{
+    top: 35%;
+}
+.parallax-top-img{
+    top: 0;
+}
+
+.test{
+    height: 1000rem;
+}
+
+.test1{
+    height: 100rem;
+    position: relative;
+    /* background-color: red; */
+    border: 2px solid beige;
+}
+
+.img-para{
+    height: 60rem;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+.top-img{
+    top: 0;
+  z-index: 11;
+}
+.middle-img{
+    top: 35%;
+    z-index: 11;
+}
+.bottom-img{
+    top: 55%;
+    z-index: 11;
+}
+
 
 /* Hiking information */
 

@@ -14,7 +14,7 @@ const loader=document.querySelector(".preloader")
 window.addEventListener("load",()=>{
  gsap.to(".preloader",{opacity:0,duration:2,y:0,ease:"power2"})
 })
-
+// Open menu & add overlay
 openMenuIcon.addEventListener("click",()=>{
     mobileMenu.classList.add("menu-opened");
     headerOverlay.classList.add("menu-opened")
@@ -24,8 +24,19 @@ closeMenuIcon.addEventListener("click",()=>{
     mobileMenu.classList.remove("menu-opened");
     headerOverlay.classList.remove("menu-opened");
 })
-// Open menu & add overlay
+
 
 // Close menu & remove overlay
 
 // Add parallax effect
+
+window.addEventListener("scroll",()=>{
+    let scrollPosition= window.scrollY;
+    console.log(scrollPosition)
+
+    grassImage.style.transform="translateY(" + -scrollPosition * 0.02 + "%)"
+    mountainsImage.style.transform="translateY(" + -scrollPosition * 0.04 + "%)"
+    sky.style.transform="translateY(" + -scrollPosition * 0.01 + "%)"
+    heroData.style.transform="translateY(" + scrollPosition * 0.03 + "%)"
+    heroData.style.opacity=1- scrollPosition*0.002;
+})
