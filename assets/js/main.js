@@ -12,10 +12,11 @@ const loader=document.querySelector(".preloader")
 
 
 window.addEventListener("load",()=>{
- gsap.to(".preloader",{opacity:0,duration:2,y:0,ease:"power2"})
+ gsap.to(".preloader",{opacity:0,duration:4,y:0,ease:"power2",zIndex:0})
 })
 // Open menu & add overlay
 openMenuIcon.addEventListener("click",()=>{
+    console.log("hi")
     mobileMenu.classList.add("menu-opened");
     headerOverlay.classList.add("menu-opened")
 })
