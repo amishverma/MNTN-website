@@ -12,22 +12,22 @@ const loader=document.querySelector(".preloader")
 
 
 window.addEventListener("load",()=>{
- gsap.to(".preloader",{opacity:0,duration:4,y:0,ease:"power2",zIndex:0})
+    // PRELODER EFFECT
+gsap.fromTo(".preloader", {opacity:1,backgroundColor:"#000"}, {opacity:0,backgroundColor:"transparent",x:-100, duration: 3,ease:"ease-out",zIndex:-11});
 })
 // Open menu & add overlay
 openMenuIcon.addEventListener("click",()=>{
-    console.log("hi")
     mobileMenu.classList.add("menu-opened");
     headerOverlay.classList.add("menu-opened")
 })
-
+// Close menu & remove overlay
 closeMenuIcon.addEventListener("click",()=>{
     mobileMenu.classList.remove("menu-opened");
     headerOverlay.classList.remove("menu-opened");
 })
 
 
-// Close menu & remove overlay
+
 
 // Add parallax effect
 
@@ -39,5 +39,5 @@ window.addEventListener("scroll",()=>{
     mountainsImage.style.transform="translateY(" + -scrollPosition * 0.04 + "%)"
     sky.style.transform="translateY(" + -scrollPosition * 0.01 + "%)"
     heroData.style.transform="translateY(" + scrollPosition * 0.03 + "%)"
-    heroData.style.opacity=1- scrollPosition*0.002;
+    heroData.style.opacity=1 - scrollPosition*0.002;
 })
