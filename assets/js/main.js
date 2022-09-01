@@ -13,7 +13,7 @@ const loader=document.querySelector(".preloader")
 
 window.addEventListener("load",()=>{
     // PRELODER EFFECT
-gsap.fromTo(".preloader", {opacity:1,backgroundColor:"#000"}, {opacity:0,backgroundColor:"transparent",x:-100, duration: 3,ease:"ease-out",zIndex:-11});
+gsap.fromTo(".preloader", {opacity:1,backgroundColor:"#000",}, {opacity:1,backgroundColor:"rgba(0,0,0,0.3)",duration:1.5,ease:"ease-in",display:"none"});
 })
 // Open menu & add overlay
 openMenuIcon.addEventListener("click",()=>{
